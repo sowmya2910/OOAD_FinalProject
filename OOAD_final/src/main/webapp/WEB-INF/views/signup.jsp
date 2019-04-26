@@ -14,16 +14,17 @@
 
 <div class="container">
 
-    <form method="POST" action="/login" class="form-signin">
+    <form method="POST" action="/signup" class="form-signin">
         <h2 class="form-heading">Create an account to get started.</h2>
  
-                    <input type="text" name="email" value="" class="form-control input-lg" placeholder="Username"  /><input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  /><input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  />        
- 
+                    <input type="text" name="email" value="" class="form-control input-lg" placeholder="Username"  />
+                    <input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
+                    <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  />
 
-           <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign me Up!</button>
-        </div>
-
+           <!-- <a href="/login" class="btn btn-primary btn-block text-uppercase" role="button">Sign Up</a> -->
+           <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign Up</button>
     </form>
+    </div>
 
 </div>
 <!-- /container -->

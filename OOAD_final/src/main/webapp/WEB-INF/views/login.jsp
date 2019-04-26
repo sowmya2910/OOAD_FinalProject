@@ -15,7 +15,7 @@
 <div class="container">
 
     <form method="POST" action="/login" class="form-signin">
-        <h2 class="form-heading">Log in to restaurant to place an order/view and pay bills.</h2>
+        <h2 class="form-heading">${name}, Log in to restaurant to place an order/view and pay bills.</h2>
 		<div>
         <div class="form-label-group">
      
@@ -27,11 +27,11 @@
      	</div>
 
            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign up</button>
+           
         </div>
         
     </form>
-
+    <a href="/signup" class="btn btn-primary btn-block text-uppercase" role="button">Sign Up</a>
 
 </div>
 <!-- /container -->
