@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling REST APIs focused on
+* dealing with logout and redirection to login.
+*/
 package com.OOAD.login;
 
 import javax.servlet.http.HttpServletRequest;
