@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* Establishing MngoDB Connection and authentication
+*/
+
 package com.OOAD.login;
 
 import org.apache.log4j.Logger;
