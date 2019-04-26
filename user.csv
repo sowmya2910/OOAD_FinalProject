@@ -1,0 +1,7 @@
+id , username,password, role
+1,Divya,blah,USER
+2,Sravanth,blah1,ADMIN
+3,Abhinav,blah2,USER
+4,Sowmya,blah3,USER
+5,Bruce,OOAD,ADMIN
+6,Someone,blah4,ADMIN
