@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* Class for bill calculation
+*/
+
 package com.OOAD.order;
 
 public class CalculateBill {
