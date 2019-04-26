@@ -30,9 +30,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Autowired
 	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
 		List<UserDb> u = getData();
-		for (UserDb element : u) {
-			//System.out.println(element.getUsername());
-			auth.inMemoryAuthentication().withUser(element.getUsername()).password(element.getPassword()).roles("USER", element.getRoles());
+		for (UserDb element : u) {			
+			String role=element.getRoles().toString();
+			String base="ADMIN";
+			if (role.equals(base)) {
+			auth.inMemoryAuthentication().withUser(element.getUsername()).password(element.getPassword()).roles("USER","ADMIN");
+			}
+			else {
+				auth.inMemoryAuthentication().withUser(element.getUsername()).password(element.getPassword()).roles("USER");			
+			}
+			
 		}
 		
 	}

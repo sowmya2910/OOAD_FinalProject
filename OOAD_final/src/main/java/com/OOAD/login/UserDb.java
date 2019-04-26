@@ -12,11 +12,12 @@ public class UserDb implements Serializable {
 		super();
 	}
 
-	public UserDb(String id, String username,String password) {
+	public UserDb(String id, String username,String password,String roles) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password=password;
+		this.roles=roles;
 	}
 
 	public String getUsername() {

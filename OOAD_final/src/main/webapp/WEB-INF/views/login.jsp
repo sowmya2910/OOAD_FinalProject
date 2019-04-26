@@ -15,7 +15,8 @@
 <div class="container">
 
     <form method="POST" action="/login" class="form-signin">
-        <h2 class="form-heading">${name}, Log in to restaurant to place an order/view and pay bills.</h2>
+    	<h2 style="color:red;" class="form-heading">${warning}</h2>
+        <h2 class="form-heading">${name}${comma} Log in to restaurant to place an order/view and pay bills.</h2>
 		<div>
         <div class="form-label-group">
      

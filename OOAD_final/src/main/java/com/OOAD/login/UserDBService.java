@@ -106,7 +106,24 @@ public class UserDBService {
 		return coll.findOne(where_query);
 	}
 
+		
+	public DBObject isPresent(String UserName) {
+		
+		DBCollection coll = MongoFactory.getCollection(db_name, db_collection);
+	
+		DBObject where_query = new BasicDBObject();
+		where_query.put("username", UserName);
+	
+	    //DBObject dbo = 	
+		
+		return coll.findOne(where_query);	
+		
+//		boolean isExists = userRepository.exists(user.getId());
+//	return isExists
+	}
+	
 
+	
 	public UserDb findUserName(String UserName) {
 		UserDb u = new UserDb();
 		DBCollection coll = MongoFactory.getCollection(db_name, db_collection);
