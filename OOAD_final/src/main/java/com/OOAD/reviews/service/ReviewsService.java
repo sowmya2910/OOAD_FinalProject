@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* Reviews Service
+*/
+
 package com.OOAD.reviews.service;
 
 import java.util.ArrayList;
