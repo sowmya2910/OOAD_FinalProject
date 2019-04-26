@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling User database service in MongoDB
+*/
+
 package com.OOAD.login;
 
 import java.util.ArrayList;
@@ -114,12 +124,10 @@ public class UserDBService {
 		DBObject where_query = new BasicDBObject();
 		where_query.put("username", UserName);
 	
-	    //DBObject dbo = 	
+	  
 		
 		return coll.findOne(where_query);	
 		
-//		boolean isExists = userRepository.exists(user.getId());
-//	return isExists
 	}
 	
 
