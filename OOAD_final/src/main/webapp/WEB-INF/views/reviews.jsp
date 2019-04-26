@@ -10,7 +10,7 @@
 			<form:errors path="desc" cssClass="text-warning" />
 		</fieldset>
 		<fieldset class="form-group">
-			<form:label path="targetDate">Today Date</form:label>
+			<form:label path="targetDate">Today's Date</form:label>
 			<form:input path="targetDate" type="text" class="form-control"
 				required="required" />
 			<form:errors path="targetDate" cssClass="text-warning" />
@@ -26,3 +26,11 @@
 		format : 'dd/mm/yyyy'
 	});
 </script>
+<style CSS>
+body {
+  background: url("http://thekitemap.com/images/feedback-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>

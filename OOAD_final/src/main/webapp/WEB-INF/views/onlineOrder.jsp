@@ -121,10 +121,10 @@
 </body>
 <style CSS>
 body {
-  background: url("https://cdn.shopify.com/s/files/1/0065/4917/6438/products/a-delivery-man-delivering-a-large-box-and-a-suburban-street-background_1200x1200.jpg?v=1538460471");
+  background: url("https://background-tiles.com/overview/white/patterns/large/1025.png");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: black;
 }
 
 </style>

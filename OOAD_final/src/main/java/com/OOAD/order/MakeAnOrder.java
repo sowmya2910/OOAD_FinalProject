@@ -1,11 +1,18 @@
 package com.OOAD.order;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import javax.annotation.Resource;
+
 
 @Controller
 public class MakeAnOrder {	
@@ -23,11 +30,47 @@ public class MakeAnOrder {
 	int quantity11 = 0;
 	int quantity12 = 0;
 	
+	//String menu = "XXXXXXXXXXXXXXXXXXXXXXXXX";
+	
+	
 	private CalculateBill bill = new CalculateBill();
+//	
+//	@Resource(name="MenuDBService")
+//	private MenuDBService menuDbService;
+//	//List<MenuItemDb> menu_list=menuDbService.getAll();
+//	
+//   @Autowired
+	private List<MenuItemDb> getData() {//List<MenuItemDb> getData() {
+		List<MenuItemDb> menu_list = new ArrayList<MenuItemDb>();
+		MenuDBService menuDbService=new MenuDBService();
+		menu_list= menuDbService.getAll();		
+		return menu_list;
+      }	
+	//private 
 	
 	// GET menu
 	@RequestMapping(value = "/menu", method = RequestMethod.GET)
-	public String getMenu() {
+	public String getMenu(Model model) {
+		//List<MenuItemDb> menu_list=menuDbService.getAll();
+		//model.addAttribute("MenuList",menuDbService.getAll());
+		List<MenuItemDb> menu_list=getData();
+		int i=1;
+		for (MenuItemDb element : menu_list) {
+//				//System.out.println(element.getItemName());
+//				System.out.println(element.getItemName());
+//				System.out.println(element.getDescription());
+//	     		System.out.println(element.getPrice());
+//				System.out.println(element.getCalories());
+//				System.out.println("_____________________________________");
+//				
+				model.addAttribute("Menu"+Integer.toString(i), element.getItemName());
+				model.addAttribute("Desc"+Integer.toString(i), element.getDescription());
+				model.addAttribute("Price"+Integer.toString(i), element.getPrice());
+				model.addAttribute("Calories"+Integer.toString(i), element.getCalories());
+				i+=1;
+			}	
+		
+		//model.addAttribute("Menu1", menuItem1);
 		return "menu";
 	}
 	

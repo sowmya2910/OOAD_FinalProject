@@ -19,16 +19,14 @@
 	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
 </head>
 <body>
-	<header class="site-header" id="header">
-		<h1 class="site-header__title" data-lead-id="site-header-title">THANK YOU!</h1>
-	</header>
+		<h3 class="site-header__title" data-lead-id="site-header-title">THANK YOU<br>
+		Prof. Montgomery</h3>
 
 	<div class="main-content">
-		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
-		<p class="main-content__body" data-lead-id="main-content-body">Payment Successful. <br>
-		It means a lot to us, just like you do! We really appreciate you giving us a moment of your time today.<br>
-		Please go to home page and provide your valuable <i><b>feedback! :D</b></i></p>
-		<a href="/reviews" class="btn btn-default" role="button">Feedback</a>
+		<p class="main-content__body" data-lead-id="main-content-body">
+		<b>For your wonderful class!</b>
+		It means a lot to us! We really appreciate you giving us your valuable feedback.<br>
+		</p>
 	</div>
 
 </body>

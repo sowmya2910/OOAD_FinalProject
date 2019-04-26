@@ -1,22 +1,42 @@
 package com.OOAD.security;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.util.AntPathMatcher;
+
+
+import com.OOAD.login.UserDBService;
+import com.OOAD.login.UserDb;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+	
+	private List<UserDb> getData() {
+		List<UserDb> user_list = new ArrayList<UserDb>();
+		UserDBService userDbService=new UserDBService();
+		user_list= userDbService.getAll();		
+		return user_list;
+		
+	}	
 
+	
 	@Autowired
 	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication().withUser("abhinav").password("dummy").roles("USER", "ADMIN");
-		auth.inMemoryAuthentication().withUser("sravanth").password("dummy").roles("USER");
+		List<UserDb> u = getData();
+		for (UserDb element : u) {
+			//System.out.println(element.getUsername());
+			auth.inMemoryAuthentication().withUser(element.getUsername()).password(element.getPassword()).roles("USER", element.getRoles());
+		}
+		
 	}
+	
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -26,4 +46,5 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		
 		http.csrf().disable();
 	}
+
 }

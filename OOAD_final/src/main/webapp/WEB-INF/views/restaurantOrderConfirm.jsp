@@ -11,18 +11,18 @@
 </head>
 <body>
  Yayy! Your order is Confirmed!</br>
- You ordered Dish 1: ${Quantity1}<br>
- You ordered Dish 2: ${Quantity2}<br>
- You ordered Dish 3: ${Quantity3}<br>
- You ordered Dish 4: ${Quantity4}<br>
- You ordered Dish 5: ${Quantity5}<br>
- You ordered Dish 6: ${Quantity6}<br>
- You ordered Dish 7: ${Quantity7}<br>
- You ordered Dish 8: ${Quantity8}<br>
- You ordered Dish 9: ${Quantity9}<br>
- You ordered Dish 10: ${Quantity10}<br>
- You ordered Dish 11: ${Quantity11}<br>
- You ordered Dish 12: ${Quantity12}<br>
+ You ordered Veggie Burger: ${Quantity1}<br>
+ You ordered Veggie Pesto Panini: ${Quantity2}<br>
+ You ordered Tofu Sandwich: ${Quantity3}<br>
+ You ordered Meatloaf Sandwich: ${Quantity4}<br>
+ You ordered Turkey Bacon Sandwich: ${Quantity5}<br>
+ You ordered BLT Burger: ${Quantity6}<br>
+ You ordered Mashed Potatoes: ${Quantity7}<br>
+ You ordered Steak Burger: ${Quantity8}<br>
+ You ordered Classic Fries: ${Quantity9}<br>
+ You ordered Jalapeno Fries: ${Quantity10}<br>
+ You ordered Nachos: ${Quantity11}<br>
+ You ordered Onion Rings: ${Quantity12}<br>
  <a href="/getBill" class="btn btn-lg btn-success btn-block" role="button">Get the bill</a>
 </body>
 </html>
