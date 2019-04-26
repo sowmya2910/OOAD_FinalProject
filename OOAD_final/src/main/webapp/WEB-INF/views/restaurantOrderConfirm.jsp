@@ -10,20 +10,23 @@
 <title>Insert title here</title>
 </head>
 <body>
- Yayy! Your order is Confirmed!</br>
- You ordered Veggie Burger: ${Quantity1}<br>
- You ordered Veggie Pesto Panini: ${Quantity2}<br>
- You ordered Tofu Sandwich: ${Quantity3}<br>
- You ordered Meatloaf Sandwich: ${Quantity4}<br>
- You ordered Turkey Bacon Sandwich: ${Quantity5}<br>
- You ordered BLT Burger: ${Quantity6}<br>
- You ordered Mashed Potatoes: ${Quantity7}<br>
- You ordered Steak Burger: ${Quantity8}<br>
- You ordered Classic Fries: ${Quantity9}<br>
- You ordered Jalapeno Fries: ${Quantity10}<br>
- You ordered Nachos: ${Quantity11}<br>
- You ordered Onion Rings: ${Quantity12}<br>
- <a href="/getBill" class="btn btn-lg btn-success btn-block" role="button">Get the bill</a>
+<div class="container">
+ <p><h2>Yayy! Your order is Confirmed!</br></h2></p>
+ <p>You ordered Veggie Burger: ${Quantity1}<br><p>
+ <p>You ordered Veggie Pesto Panini: ${Quantity2}<br><p>
+ <p>You ordered Tofu Sandwich: ${Quantity3}<br><p>
+ <p>You ordered Meatloaf Sandwich: ${Quantity4}<br><p>
+ <p>You ordered Turkey Bacon Sandwich: ${Quantity5}<br><p>
+ <p>You ordered BLT Burger: ${Quantity6}<br><p>
+ <p>You ordered Mashed Potatoes: ${Quantity7}<br><p>
+ <p>You ordered Steak Burger: ${Quantity8}<br><p>
+ <p>You ordered Classic Fries: ${Quantity9}<br><p>
+ <p>You ordered Jalapeno Fries: ${Quantity10}<br><p>
+ <p>You ordered Nachos: ${Quantity11}<br><p>
+ <p>You ordered Onion Rings: ${Quantity12}<br><p>
+
+ <a href="/getBill" class="btn btn-success" role="button">Get the bill</a>
+ </div>
 </body>
 </html>
 
