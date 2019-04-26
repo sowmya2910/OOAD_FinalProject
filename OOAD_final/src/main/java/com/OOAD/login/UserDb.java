@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* Class for user database
+*/
+
 package com.OOAD.login;
 
 import java.io.Serializable;
