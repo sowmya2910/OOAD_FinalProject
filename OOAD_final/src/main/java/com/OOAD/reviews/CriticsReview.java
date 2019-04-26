@@ -1,3 +1,14 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling REST APIs focused on
+* dealing with critic reviews and acknowledgement.
+*/
+
 package com.OOAD.reviews;
 
 import org.springframework.stereotype.Controller;
