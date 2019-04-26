@@ -12,6 +12,7 @@
 <%@ include file="commonCode/header.jspf"%>
 <%@ include file="commonCode/navigation.jspf"%>
 
+<div class="container group-header">${table}</div>
 <div class="container group-header">
   
 	<form method="POST" action="/makeOrder" class="form-inline">
