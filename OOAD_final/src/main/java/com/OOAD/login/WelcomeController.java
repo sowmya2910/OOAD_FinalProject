@@ -1,3 +1,14 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling REST APIs focused on
+* dealing with welcome page after successful login.
+*/
+
 package com.OOAD.login;
 
 import org.springframework.security.core.context.SecurityContextHolder;
