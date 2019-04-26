@@ -1,3 +1,14 @@
+<!-- 
+/**
+* @author Sravanth Yajamanam/Sowmya Ramakrishnan
+*/
+
+
+/*
+* Page to list reviews
+*/
+-->
+
 <%@ include file="commonCode/header.jspf"%>
 <%@ include file="commonCode/navigation.jspf"%>
 
