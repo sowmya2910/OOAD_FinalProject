@@ -1,3 +1,14 @@
+<!-- 
+/**
+* @author Sravanth Yajamanam/Sowmya Ramakrishnan
+*/
+
+
+/*
+* Restaurant Management contact page
+*/
+-->
+
 <!DOCTYPE html>
 <%@ include file="commonCode/header.jspf"%>
 <%@ include file="commonCode/navigation.jspf"%>
