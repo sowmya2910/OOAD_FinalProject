@@ -1,3 +1,14 @@
+<!-- 
+/**
+* @author Sravanth Yajamanam/Sowmya Ramakrishnan
+*/
+
+
+/*
+* Page to edit quantities of menu items and place order
+*/
+-->
+
 <%@ include file="commonCode/header.jspf"%>
 <%@ include file="commonCode/navigation.jspf"%>
 
