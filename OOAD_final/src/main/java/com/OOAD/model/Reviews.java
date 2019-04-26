@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* Class to enable addition of reviews
+*/
+
 package com.OOAD.model;
 
 import java.util.Date;
