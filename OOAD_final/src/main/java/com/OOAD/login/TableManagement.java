@@ -1,3 +1,12 @@
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* Class enabling table management
+*/
+
 package com.OOAD.login;
 
 import org.springframework.stereotype.Controller;
