@@ -1,3 +1,14 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling REST APIs focused on
+* dealing with contact us page.
+*/
+
 package com.OOAD.model;
 
 import org.springframework.stereotype.Controller;
