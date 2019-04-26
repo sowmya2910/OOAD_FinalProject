@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* Class enabling order making and bill generation
+*/
+
 package com.OOAD.order;
 
 import java.util.ArrayList;
