@@ -1,3 +1,14 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling REST APIs focused on
+* dealing with signing up action.
+*/
+
 package com.OOAD.login;
 
 import java.util.ArrayList;
