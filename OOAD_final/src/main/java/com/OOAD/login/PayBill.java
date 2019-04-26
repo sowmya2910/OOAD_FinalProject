@@ -1,3 +1,14 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling REST APIs focused on
+* dealing with bill payment and confirmation
+*/
+
 package com.OOAD.login;
 
 import org.springframework.stereotype.Controller;
