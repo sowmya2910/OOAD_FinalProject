@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling Spring security configuration
+*/
+
 package com.OOAD.security;
 
 import java.util.ArrayList;
