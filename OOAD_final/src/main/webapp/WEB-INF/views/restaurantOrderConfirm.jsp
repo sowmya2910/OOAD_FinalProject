@@ -1,3 +1,14 @@
+<!-- 
+/**
+* @author Sravanth Yajamanam/Sowmya Ramakrishnan
+*/
+
+
+/*
+* Page confirming order placed with details
+*/
+-->
+
 <%@ include file="commonCode/header.jspf"%>
 <%@ include file="commonCode/navigation.jspf"%>
 
