@@ -1,12 +1,4 @@
 
-/**
-* @author Sravanth Yajamanam/Sowmya Ramakrishnan
-*/
-
-
-/*
-* Access Denied webpage
-*/
 
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 
