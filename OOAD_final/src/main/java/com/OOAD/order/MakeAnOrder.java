@@ -8,24 +8,24 @@
 * Class enabling order making and bill generation
 */
 
-package com.OOAD.order;
+package com.OOAD.login;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import javax.annotation.Resource;
 
+import com.OOAD.order.CalculateBill;
 
 @Controller
 public class MakeAnOrder {	
+	
+	static Random random1 = new Random();	
+	static int rand1 = random1.nextInt(6);
 	
 	int quantity1 = 0;
 	int quantity2 = 0;
@@ -40,47 +40,11 @@ public class MakeAnOrder {
 	int quantity11 = 0;
 	int quantity12 = 0;
 	
-	//String menu = "XXXXXXXXXXXXXXXXXXXXXXXXX";
-	
-	
 	private CalculateBill bill = new CalculateBill();
-//	
-//	@Resource(name="MenuDBService")
-//	private MenuDBService menuDbService;
-//	//List<MenuItemDb> menu_list=menuDbService.getAll();
-//	
-//   @Autowired
-	private List<MenuItemDb> getData() {//List<MenuItemDb> getData() {
-		List<MenuItemDb> menu_list = new ArrayList<MenuItemDb>();
-		MenuDBService menuDbService=new MenuDBService();
-		menu_list= menuDbService.getAll();		
-		return menu_list;
-      }	
-	//private 
 	
 	// GET menu
 	@RequestMapping(value = "/menu", method = RequestMethod.GET)
-	public String getMenu(Model model) {
-		//List<MenuItemDb> menu_list=menuDbService.getAll();
-		//model.addAttribute("MenuList",menuDbService.getAll());
-		List<MenuItemDb> menu_list=getData();
-		int i=1;
-		for (MenuItemDb element : menu_list) {
-//				//System.out.println(element.getItemName());
-//				System.out.println(element.getItemName());
-//				System.out.println(element.getDescription());
-//	     		System.out.println(element.getPrice());
-//				System.out.println(element.getCalories());
-//				System.out.println("_____________________________________");
-//				
-				model.addAttribute("Menu"+Integer.toString(i), element.getItemName());
-				model.addAttribute("Desc"+Integer.toString(i), element.getDescription());
-				model.addAttribute("Price"+Integer.toString(i), element.getPrice());
-				model.addAttribute("Calories"+Integer.toString(i), element.getCalories());
-				i+=1;
-			}	
-		
-		//model.addAttribute("Menu1", menuItem1);
+	public String getMenu() {
 		return "menu";
 	}
 	
@@ -120,6 +84,108 @@ public class MakeAnOrder {
 			model.addAttribute("Quantity10",quantity10);
 			model.addAttribute("Quantity11",quantity11);
 			model.addAttribute("Quantity12",quantity12);
+			
+			TableManagement table1 = new TableManagement();
+			
+			System.out.println(rand1);
+			if (rand1 == 0) {			
+				int returnVal0 = table1.getFlag1();
+				
+				if (returnVal0 == 1) {
+					System.out.println("Table 1 already Booked, login again");
+					model.addAttribute("table","Table 1 already Booked, submit again");
+					return "makeOrder";
+				}
+				
+				else {
+					System.out.println("Table 1 is Free and booking for you");
+					int returnVal1 = table1.setFlag1(1);
+					model.addAttribute("table", "Table 1 is Free and booking for you");
+				}
+			}
+				
+			else if (rand1 == 1) {
+				int returnVal2 = table1.getFlag2();
+				
+				if (returnVal2 == 1) {
+					System.out.println("Table 2 is already Booked, login again");
+					model.addAttribute("table","Table 2 already Booked, submit again");
+					return "makeOrder";
+				}
+				
+				else {
+					System.out.println("Table 2 is Free and booking for you");
+					int returnVal3 = table1.setFlag2(1);
+					model.addAttribute("table", "Table 2 is Free and booking for you");
+				}
+			}
+			
+			System.out.println(rand1);
+			if (rand1 == 2) {			
+				int returnVal4 = table1.getFlag3();
+				
+				if (returnVal4 == 1) {
+					System.out.println("Table 3 already Booked, login again");
+					model.addAttribute("table","Table 3 already Booked, submit again");
+					return "makeOrder";
+				}
+				
+				else {
+					System.out.println("Table 3 is Free and booking for you");
+					int returnVal5 = table1.setFlag3(1);
+					model.addAttribute("table", "Table 3 is Free and booking for you");
+				}
+			}
+				
+			else if (rand1 == 3) {
+				int returnVal6 = table1.getFlag4();
+				
+				if (returnVal6 == 1) {
+					System.out.println("Table 4 is already Booked, login again");
+					model.addAttribute("table","Table 4 already Booked, submit again");
+					return "makeOrder";
+				}
+				
+				else {
+					System.out.println("Table 4 is Free and booking for you");
+					int returnVal7 = table1.setFlag4(1);
+					model.addAttribute("table", "Table 4 is Free and booking for you");
+				}
+			}
+			
+			System.out.println(rand1);
+			if (rand1 == 4) {			
+				int returnVal8 = table1.getFlag5();
+				
+				if (returnVal8 == 1) {
+					System.out.println("Table 5 already Booked, login again");
+					model.addAttribute("table","Table 5 already Booked, submit again");
+					return "makeOrder";
+				}
+				
+				else {
+					System.out.println("Table 5 is Free and booking for you");
+					int returnVal9 = table1.setFlag5(1);
+					model.addAttribute("table", "Table 5 is Free and booking for you");
+				}
+			}
+				
+			else if (rand1 == 5) {
+				int returnVal10 = table1.getFlag6();
+				
+				if (returnVal10 == 1) {
+					System.out.println("Table 6 is already Booked, login again");
+					model.addAttribute("table","Table 6 already Booked, submit again");
+					return "makeOrder";
+				}
+				
+				else {
+					System.out.println("Table 6 is Free and booking for you");
+					int returnVal11 = table1.setFlag6(1);
+					model.addAttribute("table", "Table 6 is Free and booking for you");
+				}
+			}
+			 
 			
 	        return "restaurantOrderConfirm";
 	    }
