@@ -1,3 +1,13 @@
+
+/**
+* @author Abhinav Gupta/Divya Athoopallil
+*/
+
+
+/*
+* This Controller contains handling REST APIs focused on
+* dealing with Access Denied page.
+*/
 package com.OOAD.exceptionHandling;
 
 import org.springframework.stereotype.Controller;
