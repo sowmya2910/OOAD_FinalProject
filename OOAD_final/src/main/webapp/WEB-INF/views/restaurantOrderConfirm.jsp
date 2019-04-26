@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="container">
- <p><h2>Yayy! Your order is Confirmed!</br></h2></p>
+ <p><h2>Yayy! Your order is Confirmed and yout table is ${table}!</br></h2></p>
  <p>You ordered Veggie Burger: ${Quantity1}<br><p>
  <p>You ordered Veggie Pesto Panini: ${Quantity2}<br><p>
  <p>You ordered Tofu Sandwich: ${Quantity3}<br><p>
